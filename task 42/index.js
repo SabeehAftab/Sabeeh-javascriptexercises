@@ -1,8 +1,12 @@
-var names = [ 'harry', 'james', 'potter', 'Thomas'];
-show_magicians.apply(this, names);
+const magicians = ["magician1", "magician2", "magician3"];
 
-function show_magicians(){
- 	for(var i=0; i<names.length; i++){
- 		console.log("great",names[i]);
-    }
-}
+const show_magicians = (magicians) => {
+  magicians.map((magician, i) => {
+    magicians[i] = magician + " The Great ";
+  });
+
+  return magicians;
+};
+
+const data = show_magicians(magicians);
+console.log("Magicians", data);
