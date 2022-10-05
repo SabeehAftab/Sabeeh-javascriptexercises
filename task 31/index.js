@@ -1,22 +1,26 @@
-const username=["admin","anwar","david","eric","emily"]
-if (username.includes("admin"))
+var age = 18;
+if(age<2)
 {
-    console.log("Hello admin, would you like to see a status report?")
+    console.log(" person is a baby.")
 }
-else if(username.includes("anwar"))
+else if (age>=2 && age<4)
 {
-    console.log('Hello anwar thank you for logging in again.')
+    console.log("person is a toddler.")
 }
-else if(username.includes("david"))
-{
-    console.log('Hello david thank you for logging in again.')
+else if (age >= 4 && age < 13) {
+    console.log("person is a kid")
 }
-else if(username.includes("eric"))
-{
-    console.log('Hello eric thank you for logging in again.')
+else if (age >= 13 && age < 20) {
+    console.log(" the person is a teenager.")
 }
-else
+else if (age >= 20 && age < 65) {
+    console.log("person is an adult")
+}
+else if(age>65)
 {
-     console.log("We need to find some users!")
+    console.log("person is an elder")
+}
+else{//list is empty
+    console.log("We need to find some users!");
 }
 
