@@ -1,14 +1,22 @@
-var names = [ 'harry', 'james', 'potter', 'Thomas'];
-show_magicians.apply(this, names);
+const magicians = ["Harry", "James", "Potter"];
 
-function show_magicians(){
- 	for(var i=0; i<names.length; i++){
- 		console.log(names[i]);
-    }
-}
-function make_great(){
-    for(var i=0; i<names.length; i++){
-        console.log("great",names[i]);
-   }
-}
-make_great();
+const show_magicians = (magicians) => {
+  magicians.forEach((magician) => {
+    console.log("Great Magicians:", magician,"The Great");
+    
+  });
+};
+
+const make_great = (magicians) => {
+  let arr = [];
+  magicians.map((magician, i) => {
+    
+    console.log("Original Magicians:", magician);
+  });
+  return arr;
+};
+
+const changedMagi = make_great(magicians);
+
+show_magicians(magicians);
+show_magicians(changedMagi);
